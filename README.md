@@ -1,1 +1,1 @@
-# MyShoppingList-Serverside
+# MyShoppingList Serverside
