@@ -1,0 +1,22 @@
+###INI HTDINA###
+
+###INICIO CONFIGURACIONES GENERICAS###
+
+######INICIO PERSONALIZACION DE ERRORES######
+ErrorDocument 404 https://myshoppinglist.cat/404.html
+######FIN DE PERSONALIZACION DE ERRORES######
+
+###FIN DE CONFIGURACIONES GENERICAS###
+
+###INICIO REWRITE RULES###
+RewriteEngine on
+
+######INICIO NAVEGACION HTTPS######
+RewriteCond %{HTTPS} !=on [NC]
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+######FIN DE NAVEGACION HTTPS######
+
+###FIN DE REWRITE RULES###
+
+###FIN HTDINA###
+

@@ -1,0 +1,13 @@
+else {
+			$permcomp = mysql_query("SELECT perm FROM users WHERE email = '$email' LIMIT 1");
+			$permisos = mysql_fetch_row($permcomp);
+    		if ($permisos[0]==0) {
+    			$array=failedandedit;
+                echo json_encode($array);
+    		} else {
+        $array=failed;
+        $date= date("d-m-y H:i");
+        mysql_query("INSERT INTO `appdb`.`productsnone` (`id_productsnone`, `barcodepn`, `datascan` ) VALUES (NULL, '$barcode', '$date')");
+        echo json_encode($array);
+        }
+    }

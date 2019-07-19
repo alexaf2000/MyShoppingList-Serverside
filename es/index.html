@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>MyShoppingList - Tu lista de la compra inteligente</title>
+      <link rel="icon" href="../files/images/favicon.png"/>
+       <link rel='stylesheet' href='../files/fonts/ionicons/css/ionicons.min.css' type='text/css' media='all' />
+
+      <!--Hojas de estilo-->
+      <link rel='stylesheet' id='layerslider-group-css' href='../files/css/style.css' type='text/css' media='all' />
+      <link rel='stylesheet' id='uncodefont-google-css' href='../files/fonts/googleapifonts.css' type='text/css' media='all' />
+      <link rel='stylesheet' href='../files/fonts/ionicons/css/ionicons.min.css' type='text/css' media='all' />
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <!--  Android Chrome Color-->
+      <meta name="theme-color" content="#4286f4">
+
+      
+
+      <!--redes y buscadores-->
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="MyShoppingList - Tu lista de la compra inteligente" />
+      <meta property="og:url" content="https://myshoppinglist.cat" />
+      <meta property="og:site_name" content="MyShoppingList" />
+      <meta property="og:image" content="https://myshoppinglist.cat/files/images/favicon.png" />
+      <meta property="og:image:secure_url" content="https://myshoppinglist.cat/files/images/favicon.png" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="MyShoppingList" />
+      <meta name="twitter:image" content="https://myshoppinglist.cat/files/images/favicon.png" />
+      
+
+      <!--scripts-->
+      <script src="/files/js/pace.min.js"></script>
+      <link href="/files/css/pace-theme-loading-bar.css" rel="stylesheet" />
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var SiteParameters = {"site_url":"https:\/\/undsgn.com\/uncode\/","theme_directory":"https:\/\/undsgn.com\/uncode\/wp-content\/themes\/uncode","days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"2","parallax_factor":"0.25","loading":"Loading\u2026"};
+         /* ]]> */
+      </script>
+      <script type='text/javascript' src='../files/js/init.js'></script>
+      <script type='text/javascript' src='/files/js/jquery-revolution-themes.js'></script>
+      <script type="text/javascript" src="/files/js/jquery-2.1.4.js"></script>
+      <noscript>
+         <style>.woocommerce-product-gallery{ opacity: 1 !important; }</style>
+      </noscript>
+      <link rel="apple-touch-icon-precomposed" href="https://myshoppinglist.cat/files/images/favicon.png" />
+      <meta name="msapplication-TileImage" content="https://myshoppinglist.cat/files/images/favicon.png" />
+      <script type="text/javascript">function setREVStartSize(e){
+         try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;					
+         	if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+         }catch(d){console.log("Failure at Presize of Slider:"+d)}
+         };
+      </script>
+      <noscript>
+         <style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style>
+      </noscript>
+   </head>
+   <body class="page-template-default page page-id-4503 page-child parent-pageid-43938  style-color-wayh-bg group-blog hmenu hmenu-position-center header-full-width main-center-align menu-mobile-animated menu-mobile-transparent menu-mobile-centered wc-zoom-enabled wpb-js-composer js-comp-ver-5.2.1 vc_responsive" data-border="0">
+      <div class="body-borders" data-border="0">
+         <div class="top-border body-border-shadow"></div>
+         <div class="right-border body-border-shadow"></div>
+         <div class="bottom-border body-border-shadow"></div>
+         <div class="left-border body-border-shadow"></div>
+         <div class="top-border style-light-bg"></div>
+         <div class="right-border style-light-bg"></div>
+         <div class="bottom-border style-light-bg"></div>
+         <div class="left-border style-light-bg"></div>
+      </div>
+      <div class="box-wrapper">
+         <div class="box-container">
+   
+            <div class="menu-wrapper menu-sticky menu-no-arrows">
+               <header id="masthead" class="navbar menu-primary menu-light submenu-dark menu-transparent menu-add-padding style-light-original menu-absolute menu-animated menu-with-logo">
+                  <div class="menu-container menu-hide style-color-xsdn-bg menu-borders force-no-shadows">
+                     <div class="row-menu">
+                        <div class="row-menu-inner">
+                           <div id="logo-container-mobile" class="col-lg-0 logo-container middle">
+                              <div id="main-logo" class="navbar-header style-light">
+                                 <a href="../../index.html" class="navbar-brand" data-minheight="14">
+                                    <div class="html-code logo-skinnable" data-maxheight="14" style="height: 14px;">
+                                       <p class="logo"><img style="height:20px;margin-left:-25px;position:absolute;top:-2.3px;" src="../files/images/cart.png">MyShoppingList</p>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="mmb-container">
+                                 <div class="mobile-menu-button mobile-menu-button-light lines-button x2"><span class="lines"></span></div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12 main-menu-container middle">
+                              <div class="menu-horizontal menu-dd-shadow-lg">
+                                 <div class="menu-horizontal-inner">
+                                    <div class="nav navbar-nav navbar-main navbar-nav-first">
+                                       <ul id="menu-main-menu" class="menu-primary-inner menu-smart sm">
+                                          <li class="mega-menu menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children"><a href="#">Inicio<i class="fa fa-angle-down fa-dropdown"></i></a>
+                                          </li>
+                                          <li class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                             <a href="blog">Blog de desarrollo<i class="fa fa-angle-down fa-dropdown"></i></a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </header>
+            </div>
+            <script type="text/javascript">UNCODE.fixMenuHeight();</script>
+            <div class="main-wrapper">
+               <div class="main-container">
+                  <div class="page-wrapper main-onepage">
+                     <div class="sections-container">
+                        <div id="page-header">
+                           <div class="header-wrapper header-uncode-block">
+                              <div data-parent="true" class="style-color-143431-bg row-container with-parallax onepage-section boomapps_vcrow" data-label="Bienvenido" data-name="welcome">
+                                 <div class="row-background background-element">
+                                    <div class="background-wrapper">
+                                       <div class="background-inner adaptive-async"  data-uniqueid="37059-185490" data-guid="" data-path="" data-width="2841" data-height="1947" data-singlew="12" data-singleh="null" data-crop=""></div>
+                                       <div class="block-bg-overlay style-color-143431-bg" style="opacity: 0.9;"></div>
+                                    </div>
+                                 </div>
+                                 <div class="row double-top-padding double-bottom-padding single-h-padding limit-width row-parent row-header" data-height-ratio="full">
+                                    <div class="row-inner">
+                                       <div class="pos-middle pos-center align_left column_parent col-lg-12 boomapps_vccolumn single-internal-gutter">
+                                          <div class="uncol style-dark">
+                                             <div class="uncoltable">
+                                                <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                   <div class="uncont">
+                                                      <div class="row-internal row-container boomapps_vcrow">
+                                                         <div class="row col-double-gutter row-child">
+                                                            <div class="row-inner">
+                                                               <div class="pos-middle pos-left align_left align_center_tablet align_center_mobile column_child col-lg-6 boomapps_vccolumn col-md-100 single-internal-gutter">
+                                                                  <div class="uncol style-dark">
+                                                                     <div class="uncoltable">
+                                                                        <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                           <div class="uncont">
+                                                                              <div class="heading-text el-text bottom-t-top animate_when_almost_visible" data-delay="200">
+                                                                                 <h2 class="font-762333 fontsize-155944 fontheight-179065 fontspace-781688"><span>Hacer tu lista de la compra nunca había sido tan sencillo</span></h2>
+                                                                              </div>
+                                                                              <div class="clear"></div>
+                                                                              <div class="heading-text el-text mobile-hidden bottom-t-top animate_when_almost_visible" data-delay="400">
+                                                                                 <h5 class="h4 fontheight-357766 font-weight-400"><span>Añade cualquier producto a tu lista de la compra con tan solo pasar tu smartphone por encima.</span></h5>
+                                                                              </div>
+                                                                              <div class="clear"></div>
+                                                                              <div class="empty-space empty-single"><span class="empty-space-inner"></span></div>
+                                                                              <span class="btn-container btn-inline animate_when_almost_visible bottom-t-top" data-delay="600"><a href="https://www.youtube.com/embed/9RGnHapIKMo?vq=hd1080&autoplay=1&showinfo=0&rel=0&theme=light&color=white" class="custom-link btn btn-default btn-circle btn-icon-left open-iframe" data-izimodal-open="modal-youtube" style="min-width:220px">Ver video promocional</a></span><span class="btn-container btn-inline animate_when_almost_visible bottom-t-top" data-delay="600"><a href="./download/" class="custom-link btn btn-default btn-circle btn-outline btn-icon-left" style="min-width:220px">Descargar</a></span>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="pos-bottom pos-left align_center align_center_tablet align_center_mobile column_child col-lg-6 boomapps_vccolumn mobile-hidden col-md-clear no-internal-gutter">
+                                                                  <div class="uncol style-light">
+                                                                     <div class="uncoltable">
+                                                                        <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                           <div class="uncont">
+                                                                              <div class="uncode-single-media  text-center animate_when_almost_visible bottom-t-top" data-delay="400" data-speed="800">
+                                                                                 <div class="single-wrapper" style="max-width: 380px;">
+                                                                                    <div class="tmb tmb-light  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                                       <div class="t-inside">
+                                                                                          <div class="t-entry-visual" tabindex="0">
+                                                                                             <div class="t-entry-visual-tc">
+                                                                                                <div class="uncode-single-media-wrapper">
+                                                                                                   <img class="adaptive-async" src="/files/images/homeimage.png" width="258" height="506" alt="" data-width="917" data-height="1799" data-singlew="380" data-singleh="" data-crop="" data-fixed="width">
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <script id="script-133851" type="text/javascript">UNCODE.initRow(document.getElementById("script-133851"));</script>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <script type="text/javascript">UNCODE.initHeader();</script>
+                        <article id="post-4503" class="page-body style-color-xsdn-bg post-4503 page type-page status-publish has-post-thumbnail hentry page_category-classic page_category-top-menu">
+                           <div class="post-wrapper">
+                              <div class="post-body">
+                                 <div class="post-content">
+                                    <div data-parent="true" class="row-container onepage-section boomapps_vcrow" data-label="Acerca de..." data-name="about">
+                                       <div class="row triple-top-padding no-bottom-padding single-h-padding limit-width row-parent">
+                                          <div class="row-inner">
+                                             <div class="pos-top pos-center align_center column_parent col-lg-12 boomapps_vccolumn double-internal-gutter">
+                                                <div class="uncol style-light">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn">
+                                                         <div class="uncont no-block-padding col-custom-width" style="max-width:600px;">
+                                                            <div class="heading-text el-text bottom-t-top animate_when_almost_visible" data-delay="100">
+                                                               <h2 class="font-762333 h1 fontspace-781688"><span>Eficaz y distintiva</span></h2>
+                                                               <hr class="separator-break separator-accent" />
+                                                               <div class="text-lead">
+                                                                  <p>Podrás acceder a todo tu contenido con una rapidez inmediata, añadir a tu lista de la compra y gestionarla de una manera sencilla y en todos los dispositivos.</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-694825" type="text/javascript">UNCODE.initRow(document.getElementById("script-694825"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div data-parent="true" class="row-container boomapps_vcrow">
+                                       <div class="row double-top-padding triple-bottom-padding single-h-padding limit-width row-parent">
+                                          <div class="row-inner">
+                                             <div class="pos-top pos-center align_center column_parent col-lg-12 boomapps_vccolumn double-internal-gutter">
+                                                <div class="uncol style-light">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="uncode-single-media  text-center animate_when_almost_visible bottom-t-top" data-delay="200">
+                                                               <div class="single-wrapper" style="max-width: 1000px;">
+                                                                  <div class="tmb tmb-light  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                     <div class="t-inside">
+                                                                        <div class="t-entry-visual" tabindex="0">
+                                                                           <div class="t-entry-visual-tc">
+                                                                              <div class="uncode-single-media-wrapper">
+                                                                                 <img class="adaptive-async" src="/files/images/iphone-horizontal.png" width="258" height="56" alt="">
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-213086" type="text/javascript">UNCODE.initRow(document.getElementById("script-213086"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div data-parent="true" class="style-color-wayh-bg row-container with-parallax boomapps_vcrow">
+                                       <div class="row-background background-element">
+                                          <div class="background-wrapper">
+                                             <div class="background-inner adaptive-async" style="background-image: url(/files/images/marketbrand.jpg);background-repeat: no-repeat;background-position: center bottom;background-size: cover;" data-uniqueid="24539-150915" data-path="2014/12/iphone-perspective-2.jpg" data-width="2880" data-height="1243" data-singlew="12" data-singleh="null" data-crop=""></div>
+                                             <div class="block-bg-overlay style-color-wayh-bg" style="opacity: 0.65;"></div>
+                                          </div>
+                                       </div>
+                                       <div class="row quad-top-padding quad-bottom-padding single-h-padding limit-width row-parent" data-height-ratio="50">
+                                       	                                                         <center>   <div class="heading-text el-text bottom-t-top animate_when_almost_visible" style="color: white;" data-delay="100">
+                                                               <h2 class="font-762333 h1 fontspace-781688"><span>Utilizar lápiz y papel será cosa del pasado</span></h2>
+                                                               <div class="text-lead">
+                                                                  <p>Nuestra base de datos cuenta con una infinidad de productos y supermercados.</p>
+                                                               </div>
+                                                            </div></center>
+                                          <div class="row-inner">
+                                             <div class="pos-middle pos-center align_center column_parent col-lg-3 boomapps_vccolumn col-md-25 single-internal-gutter">
+                                                <div class="uncol style-dark">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="uncode-wrapper uncode-counter  zoom-in animate_when_almost_visible" data-delay="200">
+                                                               <p class="fontsize-155944 font-weight-700"><span class="counter">8.456</span></p>
+                                                               <div class="counter-text">
+                                                                  <p>LÍNEAS DE CÓDIGO</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="pos-middle pos-left align_center column_parent col-lg-3 boomapps_vccolumn col-md-25 single-internal-gutter">
+                                                <div class="uncol style-dark">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="uncode-wrapper uncode-counter  zoom-in animate_when_almost_visible" data-delay="400">
+                                                               <p class="fontsize-155944 font-weight-700"><span class="counter">745</span></p>
+                                                               <div class="counter-text">
+                                                                  <p>PRODUCTOS</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="pos-middle pos-left align_center column_parent col-lg-3 boomapps_vccolumn col-md-25 single-internal-gutter">
+                                                <div class="uncol style-dark">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="uncode-wrapper uncode-counter  zoom-in animate_when_almost_visible" data-delay="600">
+                                                               <p class="fontsize-155944 font-weight-700"><span class="counter">200</span></p>
+                                                               <div class="counter-text">
+                                                                  <p>USUARIOS</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="pos-middle pos-left align_center column_parent col-lg-3 boomapps_vccolumn col-md-25 single-internal-gutter">
+                                                <div class="uncol style-dark">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="uncode-wrapper uncode-counter  zoom-in animate_when_almost_visible" data-delay="800">
+                                                               <p class="fontsize-155944 font-weight-700"><span class="counter">25</span></p>
+                                                               <div class="counter-text">
+                                                                  <p>SUPERMERCADOS</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-142370" type="text/javascript">UNCODE.initRow(document.getElementById("script-142370"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div data-parent="true" class="row-container onepage-section boomapps_vcrow" data-label="Caracteristicas " data-name="features">
+                                       <div class="row triple-top-padding triple-bottom-padding single-h-padding limit-width row-parent">
+                                          <div class="row-inner">
+                                             <div class="pos-top pos-center align_center column_parent col-lg-12 boomapps_vccolumn double-internal-gutter">
+                                                <div class="uncol style-light">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="row-internal row-container boomapps_vcrow">
+                                                               <div class="row row-child">
+                                                                  <div class="row-inner">
+                                                                     <div class="pos-top pos-center align_center column_child col-lg-12 boomapps_vccolumn half-internal-gutter">
+                                                                        <div class="uncol style-light">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont" style="max-width:600px;">
+                                                                                    <div class="heading-text el-text bottom-t-top animate_when_almost_visible" data-delay="100">
+                                                                                       <h2 class="font-762333 h1 fontspace-781688 text-capitalize"><span>Fantásticas funciones</span></h2>
+                                                                                       <hr class="separator-break separator-accent" />
+                                                                                       <div class="text-lead">
+                                                                                          <p>Una aplicación que logrará quedarse contigo para siempre.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="row-internal row-container boomapps_vcrow">
+                                                               <div class="row row-child">
+                                                                  <div class="row-inner">
+                                                                     <div class="pos-middle pos-center align_right align_left_tablet align_center_mobile column_child col-lg-4 boomapps_vccolumn col-md-50 single-internal-gutter">
+                                                                        <div class="uncol style-light">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont">
+                                                                                    <div class="heading-text el-text left-t-right animate_when_almost_visible">
+                                                                                       <h5 class="h5"><span>Añade con solo escanear el código de barras</span></h5>
+                                                                                       <div class="text-top-reduced">
+                                                                                          <p>Basta con abrir MyShoppingList y escanear el código de barras para que se añada a tu lista de la compra.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                    <div class="heading-text el-text left-t-right animate_when_almost_visible">
+                                                                                       <h5 class="h5"><span>Una cuenta, todo tu hogar</span></h5>
+                                                                                       <div class="text-top-reduced">
+                                                                                          <p>Puedes utilizar una sola cuenta para todo tu hogar, de esta manera cualquier miembro podrá añadir a la misma lista el producto deseado.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                    <div class="heading-text el-text left-t-right animate_when_almost_visible">
+                                                                                       <h5 class="h5"><span>Siempre conectado</span></h5>
+                                                                                       <div class="text-top-reduced">
+                                                                                          <p>No importa desde que dispositivo accedas, siempre podrás continuar tu lista estés donde estés.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="pos-middle pos-center align_center column_child col-lg-4 boomapps_vccolumn col-md-50 single-internal-gutter">
+                                                                        <div class="uncol style-light">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont">
+                                                                                    <div class="uncode-single-media  text-center animate_when_almost_visible bottom-t-top" data-delay="200">
+                                                                                       <div class="single-wrapper" style="max-width: 100%;">
+                                                                                          <div class="tmb tmb-light  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                                             <div class="t-inside">
+                                                                                                <div class="t-entry-visual" tabindex="0">
+                                                                                                   <div class="t-entry-visual-tc">
+                                                                                                      <div class="uncode-single-media-wrapper">
+                                                                                                         <img class="adaptive-async" src="/files/images/iphone-center.png" width="258" height="414">
+                                                                                                      </div>
+                                                                                                   </div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="pos-middle pos-center align_left column_child col-lg-4 boomapps_vccolumn tablet-hidden mobile-hidden col-md-clear single-internal-gutter">
+                                                                        <div class="uncol style-light">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont">
+                                                                                    <div class="heading-text el-text right-t-left animate_when_almost_visible">
+                                                                                       <h5 class="h5"><span>Al día en productos</span></h5>
+                                                                                       <div class="text-top-reduced">
+                                                                                          <p>En MyShoppingList siempre contarás con los últimos productos disponibles y actualizados.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                    <div class="heading-text el-text right-t-left animate_when_almost_visible">
+                                                                                       <h5 class="h5"><span>Busca el producto que desees añadir</span></h5>
+                                                                                       <div class="text-top-reduced">
+                                                                                          <p>Siempre que quieras podrás buscar el producto que quieras añadir, aunque no tengas el código de barras.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                    <div class="heading-text el-text right-t-left animate_when_almost_visible">
+                                                                                       <h5 class="h5"><span>Compatible con todos los dispositivos</span></h5>
+                                                                                       <div class="text-top-reduced">
+                                                                                          <p>MyShoppingList es una aplicación multiplataforma, por lo cual podrás utilizarla en Android e iOS.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-144297" type="text/javascript">UNCODE.initRow(document.getElementById("script-144297"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div data-parent="true" class="style-color-rgdb-bg row-container onepage-section boomapps_vcrow" data-label="Galería" data-name="gallery">
+                                       <div class="row triple-top-padding triple-bottom-padding single-h-padding limit-width row-parent">
+                                          <div class="row-inner">
+                                             <div class="pos-top pos-center align_center column_parent col-lg-12 boomapps_vccolumn double-internal-gutter">
+                                                <div class="uncol style-dark">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="row-internal row-container boomapps_vcrow">
+                                                               <div class="row row-child">
+                                                                  <div class="row-inner">
+                                                                     <div class="pos-top pos-center align_center column_child col-lg-12 boomapps_vccolumn half-internal-gutter">
+                                                                        <div class="uncol style-dark">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont" style="max-width:600px;">
+                                                                                    <div class="heading-text el-text bottom-t-top animate_when_almost_visible" data-delay="100">
+                                                                                       <h2 class="font-762333 h1 fontspace-781688 "><span>Galería de Capturas</span></h2>
+                                                                                       <hr class="separator-break separator-accent" />
+                                                                                       <div class="text-lead">
+                                                                                          <p>Una interfaz rápida, sencilla y genuina,<br> preparada para todos.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="owl-carousel-wrapper">
+                                                               <div class="owl-carousel-container owl-carousel-loading half-gutter">
+                                                                  <div id="gallery-736894" class="owl-carousel owl-element owl-height-auto owl-dots-outside" data-dots="true" data-dotsmobile="true" data-navmobile="false" data-navspeed="400" data-autoplay="false" data-lg="5" data-md="4" data-sm="2">
+                                                                     <div class="tmb tmb-carousel tmb-iso-h4 img-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-center tmb-shadowed tmb-media-shadowed-xs tmb-id-24546  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                        <div class="t-inside animate_when_almost_visible zoom-in" data-delay="100">
+                                                                           <div class="t-entry-visual" tabindex="0">
+                                                                              <div class="t-entry-visual-tc">
+                                                                                 <div class="t-entry-visual-cont">
+                                                                                    <div class="dummy" style="padding-top: 177.91%;"></div>
+                                                                                    <a tabindex="-1" href="/files/images/captures/es1.jpg" class="pushed" data-notmb="1" data-lbox="ilightbox_gallery-736894" data-options="width:750,height:1334">
+                                                                                       <div class="t-entry-visual-overlay">
+                                                                                          <div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.95;"></div>
+                                                                                       </div>
+                                                                                       <div class="t-overlay-wrap">
+                                                                                          <div class="t-overlay-inner">
+                                                                                             <div class="t-overlay-content">
+                                                                                                <div class="t-overlay-text single-block-padding">
+                                                                                                   <div class="t-entry"><i class="ion-ios-search-strong t-overlay-icon"></i></div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                       <img class="adaptive-async" src="/files/images/captures/es1.jpg" width="258" height="459" alt="" />
+                                                                                    </a>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="tmb tmb-carousel tmb-iso-h4 img-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-center tmb-shadowed tmb-media-shadowed-xs tmb-id-24549  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                        <div class="t-inside animate_when_almost_visible zoom-in" data-delay="100">
+                                                                           <div class="t-entry-visual" tabindex="0">
+                                                                              <div class="t-entry-visual-tc">
+                                                                                 <div class="t-entry-visual-cont">
+                                                                                    <div class="dummy" style="padding-top: 177.91%;"></div>
+                                                                                    <a tabindex="-1" href="/files/images/captures/es2.jpg" class="pushed" data-notmb="1" data-lbox="ilightbox_gallery-736894" data-options="width:750,height:1334">
+                                                                                       <div class="t-entry-visual-overlay">
+                                                                                          <div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.95;"></div>
+                                                                                       </div>
+                                                                                       <div class="t-overlay-wrap">
+                                                                                          <div class="t-overlay-inner">
+                                                                                             <div class="t-overlay-content">
+                                                                                                <div class="t-overlay-text single-block-padding">
+                                                                                                   <div class="t-entry"><i class="ion-ios-search-strong t-overlay-icon"></i></div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                       <img class="adaptive-async" src="/files/images/captures/es2.jpg" width="258" height="459" alt="" />
+                                                                                    </a>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="tmb tmb-carousel tmb-iso-h4 img-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-center tmb-shadowed tmb-media-shadowed-xs tmb-id-24553  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                        <div class="t-inside animate_when_almost_visible zoom-in" data-delay="100">
+                                                                           <div class="t-entry-visual" tabindex="0">
+                                                                              <div class="t-entry-visual-tc">
+                                                                                 <div class="t-entry-visual-cont">
+                                                                                    <div class="dummy" style="padding-top: 177.91%;"></div>
+                                                                                    <a tabindex="-1" href="/files/images/captures/es3.jpg" class="pushed" data-notmb="1" data-lbox="ilightbox_gallery-736894" data-options="width:750,height:1334">
+                                                                                       <div class="t-entry-visual-overlay">
+                                                                                          <div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.95;"></div>
+                                                                                       </div>
+                                                                                       <div class="t-overlay-wrap">
+                                                                                          <div class="t-overlay-inner">
+                                                                                             <div class="t-overlay-content">
+                                                                                                <div class="t-overlay-text single-block-padding">
+                                                                                                   <div class="t-entry"><i class="ion-ios-search-strong t-overlay-icon"></i></div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                       <img class="adaptive-async" src="/files/images/captures/es3.jpg" width="258" height="459" alt="" />
+                                                                                    </a>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="tmb tmb-carousel tmb-iso-h4 img-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-center tmb-shadowed tmb-media-shadowed-xs tmb-id-24550  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                        <div class="t-inside animate_when_almost_visible zoom-in" data-delay="100">
+                                                                           <div class="t-entry-visual" tabindex="0">
+                                                                              <div class="t-entry-visual-tc">
+                                                                                 <div class="t-entry-visual-cont">
+                                                                                    <div class="dummy" style="padding-top: 177.91%;"></div>
+                                                                                   <a tabindex="-1" href="/files/images/captures/es4.jpg" class="pushed" data-notmb="1" data-lbox="ilightbox_gallery-736894" data-options="width:750,height:1334">
+                                                                                       <div class="t-entry-visual-overlay">
+                                                                                          <div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.95;"></div>
+                                                                                       </div>
+                                                                                       <div class="t-overlay-wrap">
+                                                                                          <div class="t-overlay-inner">
+                                                                                             <div class="t-overlay-content">
+                                                                                                <div class="t-overlay-text single-block-padding">
+                                                                                                   <div class="t-entry"><i class="ion-ios-search-strong t-overlay-icon"></i></div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                      <img class="adaptive-async" src="/files/images/captures/es4.jpg" width="258" height="459" alt="" />
+                                                                                    </a>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="tmb tmb-carousel tmb-iso-h4 img-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-center tmb-shadowed tmb-media-shadowed-xs tmb-id-24551  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+                                                                        <div class="t-inside animate_when_almost_visible zoom-in" data-delay="100">
+                                                                           <div class="t-entry-visual" tabindex="0">
+                                                                              <div class="t-entry-visual-tc">
+                                                                                 <div class="t-entry-visual-cont">
+                                                                                    <div class="dummy" style="padding-top: 177.91%;"></div>
+                                                                                    <a tabindex="-1" href="/files/images/captures/es5.jpg" class="pushed" data-notmb="1" data-lbox="ilightbox_gallery-736894" data-options="width:750,height:1334">
+                                                                                       <div class="t-entry-visual-overlay">
+                                                                                          <div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.95;"></div>
+                                                                                       </div>
+                                                                                       <div class="t-overlay-wrap">
+                                                                                          <div class="t-overlay-inner">
+                                                                                             <div class="t-overlay-content">
+                                                                                                <div class="t-overlay-text single-block-padding">
+                                                                                                   <div class="t-entry"><i class="ion-ios-search-strong t-overlay-icon"></i></div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                       <img class="adaptive-async" src="/files/images/captures/es5.jpg" width="258" height="459" alt="" />
+                                                                                    </a>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-582186" type="text/javascript">UNCODE.initRow(document.getElementById("script-582186"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div data-parent="true" class="style-color-lxmt-bg row-container onepage-section boomapps_vcrow" data-label="Noticias" data-name="news">
+                                       <div class="row triple-top-padding triple-bottom-padding single-h-padding limit-width row-parent">
+                                          <div class="row-inner">
+                                             <div class="pos-top pos-center align_center column_parent col-lg-12 boomapps_vccolumn double-internal-gutter">
+                                                <div class="uncol style-light">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                         <div class="uncont">
+                                                            <div class="row-internal row-container boomapps_vcrow">
+                                                               <div class="row row-child">
+                                                                  <div class="row-inner">
+                                                                     <div class="pos-top pos-center align_center column_child col-lg-12 boomapps_vccolumn half-internal-gutter">
+                                                                        <div class="uncol style-light">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont" style="max-width:600px;">
+                                                                                    <div class="heading-text el-text bottom-t-top animate_when_almost_visible" data-delay="100">
+                                                                                       <h2 class="font-762333 h1 fontspace-781688"><span>Noticias de Desarrollo</span></h2>
+                                                                                       <hr class="separator-break separator-accent" />
+                                                                                       <div class="text-lead">
+                                                                                          <p>Mantente al día de todas las novedades de nuestro proyecto.</p>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="row-internal row-container boomapps_vcrow">
+                                                               <div class="row row-child">
+                                                                  <div class="row-inner">
+                                                                     <div class="pos-top pos-center align_center column_child col-lg-12 boomapps_vccolumn single-internal-gutter">
+                                                                        <div class="uncol style-light">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont" style="max-width:996px;">
+                                                                                    <div class="owl-carousel-wrapper">
+                                                                                       <div class="owl-carousel-container owl-carousel-loading single-gutter">
+                                                                                          <div id="index-97570478" class="owl-carousel owl-element owl-height-equal owl-dots-outside" data-dots="true" data-navmobile="false" data-navspeed="400" data-autoplay="false" data-lg="3" data-md="3" data-sm="1" data-vp-height="false">
+                                                                                             <div class="tmb tmb-carousel tmb-iso-h33 tmb-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-content-left tmb-content-mobile-center tmb-image-anim tmb-entry-title-capitalize  grid-cat-7 grid-cat-6 tmb-id-4233 tmb-only-text tmb-content-under">
+                                                                                                <div class="t-inside style-color-xsdn-bg animate_when_almost_visible zoom-in">
+                                                                                                   <div class="t-entry-text">
+                                                                                                      <div class="t-entry-text-tc double-block-padding">
+                                                                                                         <div class="t-entry">
+                                                                                                            <h3 class="t-entry-title h3"><a href="https://myshoppinglist.cat/es/blog/posts/myshoppinglist/6/Bienvenidos-a-nuestro-Blog-de-Desarrollo.html">Bienvenidos a nuestro Blog de Desarrollo</a></h3>
+                                                                                                            <div class="t-entry-excerpt">
+                                                                                                               <p>Alex y Francisco Javier, fundadores y principales desarrolladores de la idea os dan la bienvenida a nuestro blog de desarrollo...</p>
+                                                                                                            </div>
+                                                                                                            <hr />
+                                                                                                            <p class="t-entry-author"><a href="./blog/"><img alt='' src='https://myshoppinglist.cat/files/images/favicon.png' class='avatar avatar-80 photo' height='80' width='80' /><span>Por MyShoppingList</span></a></p>
+                                                                                                         </div>
+                                                                                                      </div>
+                                                                                                   </div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                             <div class="tmb tmb-carousel tmb-iso-h33 tmb-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-content-left tmb-content-mobile-center tmb-image-anim tmb-entry-title-capitalize  grid-cat-9 grid-cat-6 tmb-id-4231 tmb-only-text tmb-content-under">
+                                                                                                <div class="t-inside style-color-xsdn-bg animate_when_almost_visible zoom-in">
+                                                                                                   <div class="t-entry-text">
+                                                                                                      <div class="t-entry-text-tc double-block-padding">
+                                                                                                         <div class="t-entry">
+                                                                                                            <h3 class="t-entry-title h3"><a href="https://myshoppinglist.cat/es/blog/posts/myshoppinglist/8/Avances-1a-Semana-de-desarrollo.html">Avances | 1a Semana de desarrollo</a></h3>
+                                                                                                            <div class="t-entry-excerpt">
+                                                                                                               <p>Tras unas largas semanas de I+D, se ha desarrollado por completo la idea, y se ha dado comienzo con el proceso del desarrollo de la aplicación…</p>
+                                                                                                            </div>
+                                                                                                            <hr />
+                                                                                                            <p class="t-entry-author"><a href="https://myshoppinglist.cat/es/blog/posts/myshoppinglist/8/Avances-1a-Semana-de-desarrollo.html"><img alt='' src='https://myshoppinglist.cat/es/blog/files/avatar/2_120.jpg' class='avatar avatar-80 photo' height='80' width='80' /><span>Por Alex</span></a></p>
+                                                                                                         </div>
+                                                                                                      </div>
+                                                                                                   </div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                             
+                                                                                             <div class="tmb tmb-carousel tmb-format-quote tmb-iso-h33 tmb-round tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-content-left tmb-content-mobile-center tmb-image-anim tmb-entry-title-capitalize  grid-cat-8 grid-cat-7 grid-cat-6 tmb-id-4262 tmb-only-text tmb-content-under">
+                                                                                                <div class="t-inside style-color-xsdn-bg animate_when_almost_visible zoom-in">
+                                                                                                   <div class="t-entry-text">
+                                                                                                      <div class="t-entry-text-tc double-block-padding">
+                                                                                                         <div class="t-entry">
+                                                                                                            <h3 class="t-entry-title h3"><a href="https://myshoppinglist.cat/es/blog/posts/myshoppinglist/9/Avances-2a-Semana-de-desarrollo.html">Avances | 2a Semana de desarrollo</a></h3>
+                                                                                                            <div class="t-entry-excerpt">
+                                                                                                               <p>Hemos tenido una muy larga semana de desarrollo, en la cual hemos decidido plantear y afrontar la seguridad de la aplicación y de los usuarios…</p>
+                                                                                                            </div>
+                                                                                                            <hr />
+                                                                                                            <p class="t-entry-author"><a href="../../author/willie-clark/index.html"><img alt='' src='https://myshoppinglist.cat/es/blog/files/avatar/2_120.jpg' class='avatar avatar-80 photo' height='80' width='80' /><span>Por Alex</span></a></p>
+                                                                                                         </div>
+                                                                                                      </div>
+                                                                                                   </div>
+                                                                                                </div>
+                                                                                             </div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <span class="btn-container animate_when_almost_visible zoom-in" data-delay="200"><a href="blog" class="custom-link btn btn-accent btn-circle btn-icon-left">LEER TODAS LAS NOTICIAS</a></span>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-345666" type="text/javascript">UNCODE.initRow(document.getElementById("script-345666"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div data-parent="true" class="style-color-105898-bg row-container with-parallax mobile-hidden boomapps_vcrow">
+                                       <div class="row-background background-element">
+                                          <div class="background-wrapper">
+                                             <div class="background-inner adaptive-async" data-uniqueid="37059-192303" data-guid="https://undsgn-firmadamianobedu.netdna-ssl.com/uncode/wp-content/uploads/2015/09/photo-1431730524508-b2f28f2b793a-worked.jpg" data-path="2015/09/photo-1431730524508-b2f28f2b793a-worked.jpg" data-width="2841" data-height="1947" data-singlew="12" data-singleh="null" data-crop=""></div>
+                                             <div class="block-bg-overlay style-color-143431-bg" style="opacity: 0.9;"></div>
+                                          </div>
+                                       </div>
+                                       <div class="row quad-top-padding quad-bottom-padding single-h-padding limit-width row-parent">
+                                          <div class="row-inner">
+                                             <div class="pos-top pos-center align_center column_parent col-lg-12 boomapps_vccolumn single-internal-gutter">
+                                                <div class="uncol style-dark">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn">
+                                                         <div class="uncont no-block-padding col-custom-width" style="max-width:600px;">
+                                                            <div class="row-internal row-container boomapps_vcrow">
+                                                               <div class="row row-child">
+                                                                  <div class="row-inner">
+                                                                     <div class="pos-top pos-center align_center column_child col-lg-12 boomapps_vccolumn single-internal-gutter">
+                                                                        <div class="uncol style-dark">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont">
+                                                                                    <div class="animate_when_almost_visible zoom-out icon-box icon-box-top icon-inline" data-delay="200">
+                                                                                       <div class="icon-box-icon fa-container" style="margin-bottom: 0px;"><a class="colabor" href="http://inscampclar.cat" target="_blank"><img style="width: 85px;margin-top: 7.8px;border-radius:5px;box-shadow:0px 1px 10px 0px black;" src="https://myshoppinglist.cat/files/images/inscampclar.png"></a></div>
+                                                                                    </div>
+                                                                                    <div class="animate_when_almost_visible zoom-out icon-box icon-box-top icon-inline" data-delay="400">
+                                                                                       <div class="icon-box-icon fa-container" style="margin-bottom: 0px;margin-left: 45px;"><a class="colabor" href="http://websalpunt.cat/" target="_blank" ><img style="width:88px;margin-top:10px;" src="https://myshoppinglist.cat/files/images/puntcat.png"></a></div>
+                                                                                    </div>
+                                                                                    <div class="animate_when_almost_visible zoom-out icon-box icon-box-top icon-inline" data-delay="600">
+                                                                                       <div class="icon-box-icon fa-container" style="margin-bottom: 35px;width: 145px;margin-left: 45px;-webkit-filter:drop-shadow(1px 1px 1.2px rgba(0, 0, 0, 0.86))"><a class="colabor" href="https://dinahosting.com/" target="_blank"><img src="https://myshoppinglist.cat/files/images/dinahosting.png"></a></div>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-172120" type="text/javascript">UNCODE.initRow(document.getElementById("script-172120"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div data-parent="true" class="style-color-105898-bg row-container with-parallax desktop-hidden tablet-hidden boomapps_vcrow">
+                                       <div class="row-background background-element">
+                                          <div class="background-wrapper">
+                                             <div class="background-inner adaptive-async" data-uniqueid="37059-149534" data-guid="" data-path="" data-width="2841" data-height="1947" data-singlew="12" data-singleh="null" data-crop=""></div>
+                                             <div class="block-bg-overlay style-color-105898-bg" style="opacity: 0.9;"></div>
+                                          </div>
+                                       </div>
+                                       <div class="row penta-top-padding penta-bottom-padding single-h-padding limit-width row-parent">
+                                          <div class="row-inner">
+                                             <div class="pos-top pos-center align_center column_parent col-lg-12 boomapps_vccolumn single-internal-gutter">
+                                                <div class="uncol style-dark">
+                                                   <div class="uncoltable">
+                                                      <div class="uncell  boomapps_vccolumn">
+                                                         <div class="uncont no-block-padding col-custom-width" style="max-width:600px;">
+                                                            <div class="row-internal row-container boomapps_vcrow">
+                                                               <div class="row row-child">
+                                                                  <div class="row-inner">
+                                                                     <div class="pos-top pos-center align_center column_child col-lg-12 boomapps_vccolumn single-internal-gutter">
+                                                                        <div class="uncol style-dark">
+                                                                           <div class="uncoltable">
+                                                                              <div class="uncell  boomapps_vccolumn no-block-padding">
+                                                                                 <div class="uncont">
+                                                                                    <div class="animate_when_almost_visible zoom-out icon-box icon-box-top icon-inline" data-delay="200">
+                                                                                       <div class="icon-box-icon fa-container" style="margin-bottom: 0px;"><a href="http://inscampclar.cat" target="_blank"><img style="width: 45px;margin-top: 7.8px;border-radius:5px;box-shadow:0px 1px 10px 0px black;" src="https://myshoppinglist.cat/files/images/inscampclar.png"></a></div>
+                                                                                    </div>
+                                                                                    <div class="animate_when_almost_visible zoom-out icon-box icon-box-top icon-inline" data-delay="400">
+                                                                                       <div class="icon-box-icon fa-container" style="margin-bottom: 0px;margin-left: 45px;"><a href="http://websalpunt.cat/" target="_blank" ><img style="width:48px;margin-top:10px;" src="https://myshoppinglist.cat/files/images/puntcat.png"></a></div>
+                                                                                    </div>
+                                                                                    <div class="animate_when_almost_visible zoom-out icon-box icon-box-top icon-inline" data-delay="600">
+                                                                                       <div class="icon-box-icon fa-container" style="margin-bottom: 15px;width: 85px;margin-left: 45px;-webkit-filter:drop-shadow(1px 1px 1.2px rgba(0, 0, 0, 0.86))"><a href="https://dinahosting.com/" target="_blank"><img src="https://myshoppinglist.cat/files/images/dinahosting.png"></a></div>
+                                                                                    </div>
+                                                                                    <div class="animate_when_almost_visible zoom-out icon-box icon-box-top icon-inline" data-delay="800">
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <script id="script-166825" type="text/javascript">UNCODE.initRow(document.getElementById("script-166825"));</script>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+                  <footer id="colophon" class="site-footer">
+                     <div data-parent="true" class="style-color-rgdb-bg row-container mobile-hidden boomapps_vcrow">
+                        <div class="row double-top-padding double-bottom-padding single-h-padding limit-width row-parent">
+                           <div class="row-inner">
+                              <div class="pos-top pos-left align_left column_parent col-lg-3 boomapps_vccolumn col-md-33 half-internal-gutter">
+                                 <div class="uncol style-dark">
+                                    <div class="uncoltable">
+                                       <div class="uncell  boomapps_vccolumn no-block-padding">
+                                          <div class="uncont">
+                                             <div class="wpb_widgetised_column wpb_content_element">
+                                                <div class="wpb_wrapper">
+                                                   <aside id="text-5" class="widget widget_text widget-container sidebar-widgets">
+                                                      <h3 class="widget-title">ACERCA DE NOSOTROS</h3>
+                                                      <div class="textwidget">
+                                                         <p>MyShoppingList es nada mas y nada menos que una aplicación multiplataforma realizada con el simple objetivo de hacer mas sencilla la idea de añadir productos a nuestra lista de la compra.</p>
+                                                      </div>
+                                                   </aside>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="pos-top pos-left align_left column_parent col-lg-3 boomapps_vccolumn col-md-33 single-internal-gutter">
+                                 <div class="uncol style-dark">
+                                    <div class="uncoltable">
+                                       <div class="uncell  boomapps_vccolumn no-block-padding">
+                                          <div class="uncont">
+                                             <div class="wpb_widgetised_column wpb_content_element">
+                                                <div class="wpb_wrapper">
+                                                   <aside id="recent-posts-6" class="widget widget_recent_entries widget-container sidebar-widgets">
+                                                      <h3 class="widget-title">NOTICIAS DESTACADAS DE DESARROLLO</h3>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="https://myshoppinglist.cat/es/blog/posts/myshoppinglist/6/Bienvenidos-a-nuestro-Blog-de-Desarrollo.html">Bienvenidos a nuestro Blog de Desarrollo</a>
+                                                            <span class="post-date">31 de Diciembre, 2017</span>
+                                                         </li>
+                                                         <li>
+                                                            <a href="https://myshoppinglist.cat/es/blog/posts/myshoppinglist/8/Avances-1a-Semana-de-desarrollo.html">Avances | 1a Semana de desarrollo</a>
+                                                            <span class="post-date">12 de Enero, 2018</span>
+                                                         </li>
+                                                         <li>
+                                                            <a href="https://myshoppinglist.cat/es/blog/posts/myshoppinglist/9/Avances-2a-Semana-de-desarrollo.html">Avances | 2a Semana de desarrollo</a>
+                                                            <span class="post-date">27 de Enero, 2018</span>
+                                                         </li>
+                                                      </ul>
+                                                   </aside>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="pos-top pos-left align_left column_parent col-lg-3 boomapps_vccolumn col-md-33 single-internal-gutter">
+                                 <div class="uncol style-dark">
+                                    <div class="uncoltable">
+                                       <div class="uncell  boomapps_vccolumn no-block-padding">
+                                          <div class="uncont">
+                                             <div class="wpb_widgetised_column wpb_content_element">
+                                                <div class="wpb_wrapper">
+                                                   <aside id="tag_cloud-6" class="widget widget_tag_cloud widget-container sidebar-widgets">
+                                                      <h3 class="widget-title">Colaboradores</h3>
+                                                      <div class="tagcloud">
+                                                         <a href="http://inscampclar.cat"  style="font-size: 18.5pt;" aria-label="Enjoy (6 items)"><img width="45px" src='https://myshoppinglist.cat/files/images/inscampclar.png'></a>
+														<a href="http://websalpunt.cat" style="font-size: 18.5pt;" aria-label="Enjoy (6 items)"><img width="45px" src='https://myshoppinglist.cat/files/images/puntcat.png'></a>
+														<a href="https://dinahosting.com" style="font-size: 18.5pt;" aria-label="Enjoy (6 items)"> <img width="75px" style="margin-bottom: 20%;margin-top: 20%;" src="https://myshoppinglist.cat/files/images/dinahosting.png"></a>
+                                                      </div>
+                                                   </aside>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <script id="script-177545" type="text/javascript">UNCODE.initRow(document.getElementById("script-177545"));</script>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row-container style-dark-bg footer-last">
+                        <div class="row row-parent style-dark limit-width no-top-padding no-h-padding no-bottom-padding">
+                           <div class="site-info uncell col-lg-6 pos-middle text-left">&copy; 2018 MyShoppingList Todos los derechos reservados <br><br> 
+                           	<div style="font-size: 10px;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br/>Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.</div> </div>
+                           <div class="uncell col-lg-6 pos-middle text-right">
+                              <div class="social-icon icon-box icon-box-top icon-inline"><a href="/es/" target="top"><img width="15px;" src="/files/images/es.png"></a></div>
+                              <div class="social-icon icon-box icon-box-top icon-inline"><a href="/cat/" target="top"><img width="15px;" src="/files/images/cat.png"></a></div>
+                              <div class="social-icon icon-box icon-box-top icon-inline"><a href="/en/" target="top"><img width="15px;" src="/files/images/en.png"></a></div>
+                              <div class="social-icon icon-box icon-box-top icon-inline"><a href="mailto:mailmyshoppinglist@gmail.com" target="top"><p style="font-size: 10.5px;display: inline-block;">Contacto</p> <i style="position:absolute;font-size: 13.5px;margin-top:-15px;margin-left: 26px;" class="ion-email"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </footer>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="style-light footer-scroll-top"><a href="#" class="scroll-top"><i class="ion-ios-arrow-up fa-stack fa-rounded btn-default btn-hover-nobg"></i></a></div>
+      <div class="overlay overlay-sequential style-dark style-dark-bg overlay-search" data-area="search" data-container="box-container">
+         <div class="mmb-container">
+            <div class="menu-close-search mobile-menu-button menu-button-offcanvas mobile-menu-button-dark lines-button x2 overlay-close close" data-area="search" data-container="box-container"><span class="lines"></span></div>
+         </div>
+      </div>
+
+      <!--scripts-->
+      <script type='text/javascript' src='../files/js/scripts_recop.js'></script>
+<div id="barraaceptacion" style="display: block;">
+    <div class="inner">
+        MyShoppingList utiliza cookies. Para eliminar este mensaje, haga clic en el siguiente botón:
+        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>Acepto el uso de cookies</b></a> | 
+        <a href="https://myshoppinglist.cat/es/blog/pages/privacypolicy/" target="_blank" class="info">Política de Privacidad.</a>
+    </div>
+</div>
+ 
+<script src="/files/js/cookies.js"></script>
+<!--//FIN BLOQUE COOKIES-->
+   </body>
+</html>
+<!-- Localized -->

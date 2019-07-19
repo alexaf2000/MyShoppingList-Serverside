@@ -1,0 +1,30 @@
+/* PERFIL */
+@import "perfil.css";
+/* HACKS PARA EL MURO */
+.ufiItem .newComment textarea {width: 344px;}
+.ufiItem .newComment .btn_g {margin: 3px 2px 0 0;}
+.more-pubs {width: 440px;}
+#wall-content, #perfil-form .frameForm {width: 100%;}
+#attaContent input.itext {width: 82%;}
+/* HACKS PARA LA ACTGIVIDAD */
+.last-activity img.ac_avatar{padding:0;border-radius: 50%;}
+    /** => Config Cats **/
+    #config_posts label {
+        display:block;
+        cursor:pointer;
+    }
+    #config_posts ul li span {
+        background-position: left center;
+        background-repeat: no-repeat;
+        display:inline-block;
+        padding-left:20px;
+        height: 16px;
+    }
+    /** AFILIADOS **/
+    .afiliados li{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+/******/
+.visited {background-image: url(../images/icons/clock-select.png);}
+.afs {background-image: url(../images/icons/block-share.png);}

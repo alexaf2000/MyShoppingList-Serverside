@@ -1,0 +1,120 @@
+/* COMENTARIOS */
+.textarea-edit {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+    margin: 5px 0 0;
+    max-height: 500px;
+    min-height: 50px;
+    padding: 5px;
+    width: 98%;
+}
+.btnEdit {
+    width: auto; 
+    margin:3px 0;
+}
+
+.comment-content .answerOptions  ul li {
+  padding:0px 5px 0 10px;
+}
+
+.comment-box:hover .answerOptions ul li {
+	opacity: 1!important;
+}
+
+.numbersvotes .stats {
+	display: none
+}
+
+span.positivo {
+	color: #23d160;
+	font-weight: bold;
+}
+
+span.negativo {
+	color: #ff3860;
+	font-weight: bold;
+}
+
+/**** STATUS ****/
+.status {
+   right: 5px;
+   bottom: 0;
+   position: absolute;
+}
+.online {color: #23d160;}
+.busy {color: #ff3860;}
+.inactive{color: #ffdd57;}
+.offline {color: #cccccc;}
+.banned {color: #34495E;}
+
+/*
+    ICONOS EN MONITOR Y ACTIVIDAD
+    ---------------------------------------------------
+*/
+.monac_icons {
+    font: normal normal normal 14px/1 FontAwesome;
+	font-size: 15px;
+    margin-right: 5px;
+    line-height: 1.6;
+    color: #FFF;
+	border-radius: 50%;
+}
+.monac_icons{background-color: #23d160;}
+.monac_icons:before{content: "\f087";}
+span.ma_voto_negativo {background: #ff3860;}
+span.ma_voto_negativo:before {content: "\f088";}
+span.ma_comment_post {background: #3498db;}
+span.ma_comment_post:before {content: "\f0e5";}
+span.ma_comment_resp {background: #34495E;}
+span.ma_comment_resp:before  {content: "\f0e6";}
+span.ma_post {background: #00d1b2;}
+span.ma_post:before  {content: "\f0f6";}
+span.ma_points {background: #3498db;}
+span.ma_points:before  {content: "\f0d6";}
+span.ma_star {background: #ff3860;}
+span.ma_star:before  {content: "\f004";}
+span.ma_follow {background: #34495E;}
+span.ma_follow:before  {content: "\f234";}
+span.ma_follow_post {background: #00d1b2;}
+span.ma_follow_post:before  {content: "\f06e";}
+span.ma_blue_ball {background-color: #34495E;}
+span.ma_blue_ball:before  {content: "\f075";}
+span.ma_share {background: #00d1b2;}
+span.ma_share:before  {content: "\f1e0";}
+span.ma_status {background-position: 0 -176px;}
+span.ma_status:before  {content: "\f14b";}
+span.ma_wall_post {background: #3498db;}
+span.ma_wall_post:before  {content: "\f079";}
+span.ma_w_comment {background: #ff3860;}
+span.ma_w_comment:before  {content: "\f0e5";}
+span.ma_w_like {background: #34495E;}
+span.ma_w_like:before  {content: "\f087";}
+span.ma_medal{ background: #3498db;}
+span.ma_medal:before {content: "\f1d1";}
+
+
+
+
+/* MENSAJE DE ALERTA INSTALADOR */
+#msg_install {
+    background-color: #fff9da;
+    border: 1px solid #f7f1cc;
+    padding: 15px;
+    margin: -10px;
+    font: 15px "Helvetica Neue", Century Gothic;
+    line-height: 1.5;
+    color: #656565;
+    text-align:center;
+    }
+    
+/**
+ * Copyright 
+*/
+#pp_copyright 
+{   background: #2C3E50;
+    padding:12px; 
+    color:#FFF;
+}
+#pp_copyright a  strong
+{color:#FFF!important;}

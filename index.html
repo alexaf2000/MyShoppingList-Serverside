@@ -1,0 +1,74 @@
+<html>
+<head>
+		<title>MyShoppingList</title>
+		<link rel="icon" href="/files/images/favicon.png">
+		<link rel="stylesheet" type="text/css" href="/files/css/bulma.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="/files/js/pace.min.js"></script>
+  		<link href="/files/css/pace-theme-loading-bar.css" rel="stylesheet" />
+  		<!--redes y buscadores-->
+      <meta property="og:title" content="MyShoppingList" />
+      <meta property="og:url" content="https://myshoppinglist.cat" />
+      <meta property="og:site_name" content="MyShoppingList" />
+      <meta property="og:image" content="./files/images/favicon.png" />
+      <meta property="og:image:secure_url" content="./files/images/favicon.png" />
+      <meta property="og:image:width" content="2880" />
+      <meta property="og:image:height" content="1921" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="MyShoppingList" />
+      <meta name="twitter:image" content="./files/images/favicon.png" />
+      <meta name="google-site-verification" content="OyW-f0yoCUeL6aihlOK3Oo8VXFbCKYSS5f7aj25UYIw" />
+      <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://www.myshoppinglist.cat",
+  "logo": "https://www.myshoppinglist.cat/files/images/favicon.png"
+  "name": "MyShoppingList",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-401-555-1212",
+    "contactType": "Customer service"
+  }
+}
+</script>
+<script>
+
+/*
+This is just a redirection page - Folow /es/ /cat/ /eng/ depends from your language.
+*/
+
+//Enter ISO 639-2 letter Language codes to detect (see: http://www.w3.org/WAI/ER/IG/ert/iso639.htm):
+var langcodes=new Array("en", "fr", "es", "ca", "default")
+
+//Enter corresponding redirect URLs (last one is for default URL):
+var langredirects=new Array("/en/", "/en/", "/es/", "/cat/", "/en/")
+
+var languageinfo=navigator.language? navigator.language : navigator.userLanguage
+var gotodefault=1
+
+function redirectpage(dest){
+if (window.location.replace)
+window.location.replace(dest)
+else
+window.location=dest
+}
+
+for (i=0;i<langcodes.length-1;i++){
+if (languageinfo.substr(0,2)==langcodes[i]){
+redirectpage(langredirects[i])
+gotodefault=0
+break
+}
+}
+
+if (gotodefault)
+redirectpage(langredirects[langcodes.length-1])
+
+
+</script>
+</head>
+<body bgcolor="000000">
+
+</body>
+</html>

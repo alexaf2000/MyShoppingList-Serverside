@@ -1,0 +1,231 @@
+#showResult .rango {display: inline-block;}
+.paginador div {
+    display:block;
+    margin: 5px 0; 
+    width: 110px;
+}
+.paginador div a {
+    background: none repeat scroll 0 0 #383838;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF!important;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+/* AGREGAR POST */
+
+.capsprot, .errormsg{
+    color: #ff3860;
+    font-size: 12px;
+}
+
+body .form-add-post li.error input,.error textarea {
+	-moz-box-shadow:0 0 5px #e20404!important;
+	-webkit-box-shadow:0 0 5px #e20404!important;
+	box-shadow:0 0 5px #e20404!important;
+	border:1px solid #e20404!important;
+}
+
+#mydialog.preview #dialog #title {
+	display: none !important;
+}
+/* UPLOAD */
+#upload_form {
+    display: none;
+}
+
+#upload_form .head{
+    padding: 5px;
+    text-align: left;
+}
+#upload_form .inputs {
+    text-align: center;
+    width: 250px;
+}
+#upload_form input[type="radio"]{
+    margin: 0 5px 0;
+}
+#upload_form input[type="file"]{
+    margin-bottom:5px;
+}
+#results .status_0{
+    color:red;
+}
+#results .status_1{
+    color:green;
+}
+#imagenes {
+    text-align: center;
+    overflow: auto;
+    max-width: 674px;
+    max-height: 163px;
+}
+#imagenes .item{
+    width: 160px;
+    float:left;
+    margin: 1em 2px 0;
+}
+#imagenes .item img{
+    max-width: 150px;
+    max-height: 120px;
+}
+#imagenes a.txt{
+    display:block;
+}
+/* BBCodes */
+.spoiler {
+    
+}
+div.spoiler .title{
+    background-color: #CCCCCC;
+    -moz-border-radius: 4px 4px 4px 4px;
+    margin: 1em 20px 5px;
+    display: block;
+}
+div.spoiler .title a{
+    background: url(images/add.png) no-repeat 5px center;
+    padding: 3px 0px 3px 20px;
+    color: #333333;
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+}
+div.spoiler a:hover {
+    text-decoration: none;
+}
+div.spoiler a.show {
+    background-image: url(images/minus.png);
+}
+div.spoiler .body {
+    display: none;
+}
+
+div.tagsinput {
+background: #FFF;
+overflow-y: auto;
+border: 1px solid #dbdbdb;
+border-radius: 3px;
+cursor: text;
+min-height: 27px;
+padding: 6px;
+}
+
+div.tagsinput:hover {
+border-color: #b5b5b5;
+}
+
+div.tagsinput span.tag {
+float: left;
+margin-right: 5px;
+}
+
+div.tagsinput input {
+font-size: 11px;
+outline: 0px;
+border: 0;
+margin: 0 6px 6px 0;
+padding: 2px 0 3px 0;
+}
+
+div.tagsinput div {
+display:block; float: left; 
+} 
+
+.tags_clear {
+clear: both; width: 100%; height: 0px; 
+}
+
+.not_valid {
+background: #FBD8DB !important;
+color: #90111A !important;
+padding: 1px 5px 2px 5px!important;
+border: 1px solid #F00!important;
+margin: 6px 0 0 6px;
+}
+.thumbnail-preview {
+width: 100%;
+height: 180px;
+background: #fff url('images/camera-big.png') no-repeat center;
+margin: 10px auto;
+display: block;
+border: solid 4px white;
+outline: solid 1px #CCC;
+position: relative;
+}
+.error{color: #ff3860;}
+.good{color: #23d160;}
+.thumbnail-img{
+width: 100%;
+height: 100%;
+}
+#cookieMessageWrapper
+{
+    display:none;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding-bottom:10px;
+    width:100%;
+    text-align:center;
+    min-height:40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#fff;
+    z-index:99999;
+}
+#cookieMessageWrapper a
+{
+padding:4px;
+    color: #2196f3;
+    text-decoration:none;
+    text-shadow: 0 0 10px black;
+}
+#cookieMessage
+{   
+    width:100%;
+    margin-top: 10px;
+    padding-left:5px;
+    font-family:verdana;
+    font-size:12px;
+}
+ 
+#cookieMessage:after
+{
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+#cookieMessage p
+{
+margin: 5px 0 0;
+}
+#cookieClose
+{
+width: 170px;
+margin: auto;
+display: block;
+background:#25272C;
+border:1px solid #000;
+color:#FFF;
+border-width: 1px;
+padding:3px 5px 5px 5px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+box-shadow:inset 0px 1px 1px #999;
+}
+ 
+.privco
+{
+font-family:Helvetica;
+padding:10px;
+background:#ECFED8;
+font-size:12px;
+color:#333;
+}
+.privco a
+{
+text-decoration:none;
+color:#005CA5;
+}

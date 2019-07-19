@@ -1,0 +1,66 @@
+/*! imgload.css 1.0.0 | Daniel Abel - http://zkreations.com | Free to use under terms of MIT license */
+.imgload {
+    position: relative;
+    background: url(../images/bx_loader.gif) no-repeat center transparent; 
+    background-color: #2C3E50;	
+}
+
+.imgload > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    border: 0 none;
+}
+
+/* Hidden image broken */
+.imgload > img:not([src]) {
+    visibility: hidden;
+}
+
+/* Fixes Firefox anomaly */
+@-moz-document url-prefix() {
+    .imgload > img:-moz-loading {
+        visibility: hidden;
+    }
+}
+
+/* => LOADERS*/
+
+.loader:before {
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+/*PULSE*/
+@-webkit-keyframes loadpulse {
+    from{-webkit-transform: scale(0);transform: scale(0); opacity: 0;}
+    50% {opacity: 0.5;}
+    to{-webkit-transform: scale(1);transform: scale(1); opacity: 0;}
+}
+@keyframes loadpulse {
+    from{-webkit-transform: scale(0);transform: scale(0); opacity: 0;}
+    50% {opacity: 0.5;}
+    to{-webkit-transform: scale(1);transform: scale(1); opacity: 0;}
+}
+.loader:before{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    opacity: 0;
+    top: calc(50% - 4em);
+    left: calc(50% - 4em); 
+    -webkit-animation: loadpulse 1s infinite; 
+    animation: loadpulse 1s infinite;
+}
+
+/*
+   => IMAGE EFFECTS
+*/
+
+/*FADE*/
+.imgFade > img {opacity: 0;-webkit-transition: opacity .5s; transition: opacity .5s;     }
+.imgFade > img.loaded {opacity: 1;}

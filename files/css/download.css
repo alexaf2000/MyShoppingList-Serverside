@@ -1,0 +1,157 @@
+body {
+            background: -webkit-radial-gradient(left top,circle cover,rgb(12,180,206),rgb(0,108,255) 100%);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'SF-Pro-Display',Roboto,Sans-Serif;
+      }
+
+      .download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download__row {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 35em) {
+  .download__row {
+    flex-direction: row;
+  }
+}
+.download__title, .download__subtitle {
+  color: #8d9da3;
+  text-align: center;
+}
+.download__title {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 0.5em 0 0;
+  animation: fadeSlideDown 1s cubic-bezier(0.55, 0.15, 0.45, 0.85);
+  color: white;
+  font-style: italic;
+}
+@media (min-width: 50em) {
+  .download__title {
+    font-size: 2.5vw;
+  }
+}
+.download__subtitle {
+  font-weight: 200;
+  margin: 0 0 1em;
+  animation: fadeSlideUp 1s cubic-bezier(0.55, 0.15, 0.45, 0.85);
+  color: white;
+}
+@media (min-width: 50em) {
+  .download__subtitle {
+    font-size: 2vw;
+  }
+}
+
+.phone {
+  display: block;
+  width: 50%;
+}
+
+.icon {
+  height: 2.5rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+span {
+  display: inline-block;
+}
+
+
+
+.icon-link {
+  min-width: 18rem;
+  background: #006ea08a;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem 2.5rem 2rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: #fff;
+
+}
+.icon-link__eyebrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+}
+.icon-link__source {
+  font-size: 2rem;
+  line-height: 1;
+}
+.icon-link svg {
+  fill: #fff;
+}
+.icon-link:hover, .icon-link:focus, .icon-link:active {
+  color: #fff;
+  box-shadow: 0 14px 33px rgba(32, 190, 255, 0.09);
+}
+.icon-link:hover svg, .icon-link:focus svg, .icon-link:active svg {
+  fill: #fff;
+}
+.icon-link--apple:hover, .icon-link--apple:focus, .icon-link--apple:active {
+  background: #144256;
+}
+.icon-link--google:hover, .icon-link--google:focus, .icon-link--google:active {
+  background: #144256;
+}
+
+@keyframes turnUp {
+  from {
+    transform: scale(0.9) rotate(3deg) translate3d(0, 10%, 0);
+  }
+}
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0.8;
+    transform: translate3d(0, 3%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0.8;
+    transform: translate3d(0, -3%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeSlideUpSlow {
+  from {
+    opacity: 0.8;
+    transform: translate3d(0, 15%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.icono-app {
+      width: 15%;
+      margin-top: 5%;
+}
+.return {
+      color: whitesmoke;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 45px;
+      margin-left: 10%;
+}
+.windows {
+  font-size: 35px;
+}
